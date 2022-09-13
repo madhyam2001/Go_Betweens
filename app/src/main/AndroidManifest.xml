@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.In_Betweens">
         <activity
+            android:name=".WelcomeActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
