@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "329728979441",
+    "project_id": "go-betweens",
+    "storage_bucket": "go-betweens.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:329728979441:android:54c77642dc8818604d1450",
+        "android_client_info": {
+          "package_name": "com.example.in_betweens"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "329728979441-9klk0cfqjlq3n9rj9uvagghoqjn7j204.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_7h8cnfp7oOdHGpfSqX0LimSlVlb2qfo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "329728979441-9klk0cfqjlq3n9rj9uvagghoqjn7j204.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
