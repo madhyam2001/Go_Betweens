@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">In_Betweens</string>
+    <string name="title_activity_carrier_map">CarrierMapActivity</string>
 </resources>

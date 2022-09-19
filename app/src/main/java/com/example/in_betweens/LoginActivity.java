@@ -89,6 +89,8 @@ public class LoginActivity extends AppCompatActivity {
                     {
                         Toast.makeText(LoginActivity.this, "Logged in Successfully....", Toast.LENGTH_SHORT).show();
                         loadingbar.dismiss();
+                        Intent choose_Intent=new Intent(LoginActivity.this,ChooseActivity.class);
+                        startActivity(choose_Intent);
                     }
                     else
                     {
