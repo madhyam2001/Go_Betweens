@@ -13,6 +13,8 @@ import android.location.Location;
 import android.os.Build;
 import android.os.Bundle;
 
+import com.firebase.geofire.GeoFire;
+import com.firebase.geofire.GeoLocation;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationServices;
@@ -24,6 +26,9 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.example.in_betweens.databinding.ActivityCarrierMapBinding;
 import com.google.android.gms.location.LocationRequest;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class CarrierMapActivity extends FragmentActivity implements OnMapReadyCallback,
         GoogleApiClient.ConnectionCallbacks,
@@ -98,6 +103,12 @@ public class CarrierMapActivity extends FragmentActivity implements OnMapReadyCa
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
         mMap.animateCamera(CameraUpdateFactory.zoomTo(12));
 
+        String userID= FirebaseAuth.getInstance().getCurrentUser().getUid();
+        DatabaseReference CarrierAvailabilityRef= FirebaseDatabase.getInstance().getReference().child("Carriers Available");
+
+        GeoFire geoFire=new GeoFire(CarrierAvailabilityRef);
+        geoFire.setLocation(userID,new GeoLocation(location.getLatitude(),location.getLongitude()));
+
     }
     protected synchronized void buildGoogleApiClient()
     {
@@ -107,5 +118,15 @@ public class CarrierMapActivity extends FragmentActivity implements OnMapReadyCa
                 .build();
 
         googleApiClient.connect();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        String userID= FirebaseAuth.getInstance().getCurrentUser().getUid();
+        DatabaseReference CarrierAvailabilityRef= FirebaseDatabase.getInstance().getReference().child("Carriers Available");
+
+        GeoFire geoFire=new GeoFire(CarrierAvailabilityRef);
+        geoFire.removeLocation(userID);
     }
 }
