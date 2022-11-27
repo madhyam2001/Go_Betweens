@@ -36,10 +36,10 @@ public class LoginActivity extends AppCompatActivity {
         mAuth=FirebaseAuth.getInstance();
 
 
-        Register_move=findViewById(R.id.register_move);
-        Email_login=findViewById(R.id.email_login);
-        Password_login=findViewById(R.id.password_login);
-        Login_btn=findViewById(R.id.login_btn);
+        Register_move=findViewById(R.id.signup);
+        Email_login=findViewById(R.id.email);
+        Password_login=findViewById(R.id.password);
+        Login_btn=findViewById(R.id.login);
         loadingbar=new ProgressDialog(this);
 
 

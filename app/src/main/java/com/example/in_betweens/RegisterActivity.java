@@ -35,10 +35,10 @@ public class RegisterActivity extends AppCompatActivity {
         mAuth=FirebaseAuth.getInstance();
 
 
-        Login_move=findViewById(R.id.login_move);
-        Email_register=findViewById(R.id.email_register);
-        Password_register=findViewById(R.id.password_register);
-        Register_btn=findViewById(R.id.login_btn);
+        Login_move=findViewById(R.id.login);
+        Email_register=findViewById(R.id.email);
+        Password_register=findViewById(R.id.pwd);
+        Register_btn=findViewById(R.id.signupbtn);
         loadingbar=new ProgressDialog(this);
 
         Register_btn.setOnClickListener(new View.OnClickListener() {

@@ -93,6 +93,7 @@ public class CarrierMapActivity extends FragmentActivity implements OnMapReadyCa
 
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
+//        lastLocation;
 
     }
 

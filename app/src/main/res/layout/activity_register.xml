@@ -1,90 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/email"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#4949FF"
-    tools:context=".LoginActivity">
+    tools:context=".RegisterActivity"
+    android:background="#E3E6FF">
 
     <EditText
-        android:id="@+id/email_register"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:layout_width="298dp"
+        android:layout_height="45dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="58dp"
-        android:layout_marginEnd="59dp"
-        android:layout_marginBottom="503dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle"
         android:ems="10"
-        android:hint="Email"
-        android:inputType="textEmailAddress" />
+        android:fontFamily="@font/pfdregular"
+        android:hint="Name"
+        android:textColorHint="#0F172B"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-    <Button
-        android:id="@+id/login_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="298dp"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="157dp"
-        android:layout_marginBottom="264dp"
-        android:text="REGISTER" />
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rectangle"
+        android:ems="10"
+        android:fontFamily="@font/pfdregular"
+        android:hint="Email id"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#0F172B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/mobno"
+        android:layout_width="298dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rectangle"
+        android:ems="10"
+        android:fontFamily="@font/pfdregular"
+        android:hint="Mobile no"
+        android:inputType="number"
+        android:textColorHint="#0F172B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <EditText
+        android:id="@+id/pwd"
+        android:layout_width="298dp"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rectangle"
+        android:ems="10"
+        android:fontFamily="@font/pfdregular"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="#0F172B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mobno" />
+
+    <EditText
+        android:id="@+id/confirmpwd"
+        android:layout_width="298dp"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rectangle"
+        android:ems="10"
+        android:fontFamily="@font/pfdregular"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textColorHint="#0F172B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwd" />
 
     <TextView
-        android:id="@+id/login_move"
-        android:layout_width="359dp"
+        android:id="@+id/textview"
+        android:layout_width="206dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="28dp"
+        android:text="Join us!!"
+        android:textColor="#0F172B"
+        android:textSize="25dp"
+        app:fontFamily="@font/pfdbold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/signupbtn"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="26dp"
-        android:layout_marginBottom="221dp"
-        android:text="Already have an Account?"
-        android:textAlignment="center"
-        android:textColor="#A4FF0000"
-        android:textSize="20sp" />
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#0F172B"
+        android:fontFamily="@font/pfdbold"
+        android:text="Sign in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmpwd" />
 
-    <EditText
-        android:id="@+id/editTextPhone"
-        android:layout_width="293dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="130dp"
+        android:layout_height="28dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="92dp"
+        android:layout_marginBottom="56dp"
+        android:fontFamily="@font/pfdbold"
+        android:text="Joined us before?"
+        android:textColor="#0F172B"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/login"
+        app:layout_constraintStart_toStartOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/login"
+
+        android:layout_width="50dp"
+        android:layout_height="28dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="56dp"
-        android:layout_marginEnd="63dp"
-        android:layout_marginBottom="371dp"
-        android:ems="10"
-        android:hint="Phone"
-        android:inputType="phone" />
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="56dp"
+        android:backgroundTint="#E3E6FF"
+        android:fontFamily="@font/pfdbold"
+        android:onClick="login"
+        android:text="@string/login"
 
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="291dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="58dp"
-        android:layout_marginEnd="62dp"
-        android:layout_marginBottom="570dp"
-        android:ems="10"
-        android:hint="Name"
-        android:inputType="textPersonName" />
 
-    <EditText
-        android:id="@+id/password_register"
-        android:layout_width="292dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="56dp"
-        android:layout_marginEnd="63dp"
-        android:layout_marginBottom="435dp"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword" />
+        android:textColor="#56A0B7"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="OnClick" />
 
-</RelativeLayout>
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="323dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/signup" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,30 @@
 <resources>
-    <string name="app_name">In_Betweens</string>
-    <string name="title_activity_carrier_map">CarrierMapActivity</string>
+    <string name="app_name">Draft - 2</string>
+    <string name="login"><u><b>Login</b></u></string>
+    <string name="signup_txt"><u><b>Sign up</b></u></string>
+    <string name="tagline">We deliver <br>happiness to</br> your door step..!</string>
+    <string name="title_activity_carrier_map">Carrier_map_activity</string>
+    <string name="title_activity_navigation">Navigation</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="nav_home">Home</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_navigation_main">navigation_main</string>
+    <string name="title_activity_fragment_maps">fragment_maps</string>
+    <string name="home_maps">Home</string>
+    <string name="orders">Orders</string>
+    <string name="profile">Profile</string>
+    <string name="about">About</string>
+    <string name="transactions">Transactions</string>
+    <string name="dopen">Drawer Open</string>
+    <string name="dclose">Drawer Close</string>
+    <string name="title_activity_home_maps_screen">home_maps_screen</string>
 </resources>
