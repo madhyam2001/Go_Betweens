@@ -27,6 +27,13 @@ public class ChooseActivity extends AppCompatActivity {
                 startActivity(carrier_Intent);
             }
         });
+        Customer_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent customer_Intent= new Intent(ChooseActivity.this,Customer_MapsActivity.class);
+                startActivity(customer_Intent);
+            }
+        });
 
 
 
