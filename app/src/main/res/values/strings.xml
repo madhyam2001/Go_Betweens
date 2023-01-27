@@ -28,4 +28,5 @@
     <string name="dclose">Drawer Close</string>
     <string name="title_activity_home_maps_screen">home_maps_screen</string>
     <string name="title_activity_customer_maps">Customer_MapsActivity</string>
+    <string name="title_activity_tryactivity">tryactivity</string>
 </resources>

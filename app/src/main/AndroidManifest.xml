@@ -35,6 +35,10 @@
             android:value="YOUR_API_KEY" />
 
         <activity
+            android:name=".tryactivity"
+            android:exported="false"
+            android:label="@string/title_activity_tryactivity" />
+        <activity
             android:name=".Customer_MapsActivity"
             android:exported="false"
             android:label="@string/title_activity_customer_maps" />

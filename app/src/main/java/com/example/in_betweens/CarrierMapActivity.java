@@ -66,18 +66,24 @@ public class CarrierMapActivity extends FragmentActivity implements OnMapReadyCa
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-//        LogoutCarrierButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
+        LogoutCarrierButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 //                currentLogoutCarrierStatus=true;
 //                DisconnectTheCarrier();
-//                mAuth.signOut();
-//                Intent logoutIntent=new Intent(CarrierMapActivity.this,LoginActivity.class);
-//                logoutIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-//                startActivity(logoutIntent);
-//                finish();
-//            }
-//       });
+                mAuth.signOut();
+//               LogoutCarrier();
+            }
+       });
+    }
+
+    private void LogoutCarrier() {
+        Intent logoutIntent=new Intent(CarrierMapActivity.this,LoginActivity.class);
+        logoutIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+//        logoutIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(logoutIntent);
+
+                finish();
     }
 
 

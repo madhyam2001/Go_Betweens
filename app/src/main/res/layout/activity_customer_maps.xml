@@ -1,25 +1,57 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:map="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-    <LinearLayout
+    android:orientation="vertical"
+    >
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="780dp"
+        tools:context=".tryactivity" />
+
+    <LinearLayout
+        android:layout_width="144dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
         <Button
-            android:id="@+id/search_carrier"
+            android:id="@+id/btn"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Search for Carriers"
-            android:textAlignment="center"/>
+            android:layout_height="match_parent"
+            android:text="Search for carrier"></Button>
+
+
     </LinearLayout>
-<fragment
-    android:id="@+id/map"
-    android:name="com.google.android.gms.maps.SupportMapFragment"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Customer_MapsActivity" />
 </LinearLayout>
+<!--<RelativeLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:map="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical">-->
+
+<!--<fragment-->
+<!--    android:id="@+id/map"-->
+<!--    android:name="com.google.android.gms.maps.SupportMapFragment"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".Customer_MapsActivity" >-->
+
+<!--</fragment>-->
+<!--    <Button-->
+<!--        android:id="@+id/search_carrier"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Search for Carriers"-->
+<!--        android:textAlignment="center"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        />-->
+
+<!--</RelativeLayout>-->
