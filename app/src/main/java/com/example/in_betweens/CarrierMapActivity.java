@@ -69,10 +69,10 @@ public class CarrierMapActivity extends FragmentActivity implements OnMapReadyCa
         LogoutCarrierButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                currentLogoutCarrierStatus=true;
-//                DisconnectTheCarrier();
+                currentLogoutCarrierStatus=true;
+                DisconnectTheCarrier();
                 mAuth.signOut();
-//               LogoutCarrier();
+               LogoutCarrier();
             }
        });
     }
