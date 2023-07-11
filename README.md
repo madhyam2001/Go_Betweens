@@ -8,18 +8,28 @@ An application called Go-Betweens,the package delivery system helps individuals 
 
 # User Interfaces
 
-![splash](https://github.com/madhyam2001/Go_Betweens/assets/88341627/48d1f594-72d8-4cc9-96f7-17ff32f8f535)
+![splash](https://github.com/madhyam2001/Go_Betweens/blob/master/UI/splash.jpg)
 
 
-![login](https://github.com/madhyam2001/Go_Betweens/assets/88341627/1d56ecd5-e74b-43ae-9496-84c611323703)
+![login](https://github.com/madhyam2001/Go_Betweens/blob/master/UI/login.jpg)
 
-![navigation](https://github.com/madhyam2001/Go_Betweens/assets/88341627/7c167dcd-80c4-4389-ac3a-bb93d3b42326)
+![navigation](https://github.com/madhyam2001/Go_Betweens/blob/master/UI/navigation.jpg)
 
-![map](https://github.com/madhyam2001/Go_Betweens/assets/88341627/ecafa808-9b59-4880-b9a7-5814eb06a207)
+![map](https://github.com/madhyam2001/Go_Betweens/blob/master/UI/map.jpg)
 
 
 
 # UML Diagrams
 
+![ER Diagram](https://github.com/madhyam2001/Go_Betweens/blob/master/Workflow%20Diagrams/ER%20Diagram.jpg)
+
+![dataflow](https://github.com/madhyam2001/Go_Betweens/blob/master/Workflow%20Diagrams/dataflow.jpg)
+
+![activity](https://github.com/madhyam2001/Go_Betweens/blob/master/Workflow%20Diagrams/activity.jpg)
+
+![class](https://github.com/madhyam2001/Go_Betweens/blob/master/Workflow%20Diagrams/class.jpg)
+
+
+![usecase](https://github.com/madhyam2001/Go_Betweens/blob/master/Workflow%20Diagrams/usecase.jpg)
 
 
